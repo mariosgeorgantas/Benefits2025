@@ -1,6 +1,7 @@
 html,
 body {
   overflow-x: auto; /* Επιτρέπει την οριζόντια κύλιση αν το περιεχόμενο ξεπερνάει το πλάτος της οθόνης */
+  overflow-y: auto; 
   width: 100vw; /* Βεβαιώνεται ότι το πλάτος είναι 100% του viewport */
 }
 
@@ -57,15 +58,10 @@ body {
 }
 
 .explanation-tooltip .explanation-tooltiptext {
-  overflow-x: auto;
-  display: block;
-    
   visibility: hidden;
   /* Μέγιστο πλάτος του tooltip */
   width: 400px;
   max-width: 400px;
-
-  white-space: nowrap; /* Επιτρέπεται το wrapping σε νέες γραμμές, χωρίς σπάσιμο λέξεων */
   word-break: normal; /* Δεν διασπόνται οι λέξεις */
   overflow-wrap: normal; /* Μη αναγκαστικό σπάσιμο λέξεων */
   background-color: #333;
