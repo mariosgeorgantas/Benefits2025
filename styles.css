@@ -1,9 +1,10 @@
-html,
 <meta name="viewport" content="width=device-width, initial-scale=1">
+html,
+
 body {
   overflow-x: auto; /* Επιτρέπει οριζόντια κύλιση αν το περιεχόμενο είναι μεγαλύτερο */
   width: 100vw; /* Βεβαιώνει ότι το πλάτος είναι σωστό */
-  max-width: 150%; /* Αποτρέπει περιττή συρρίκνωση */
+  max-width: 100%; /* Αποτρέπει περιττή συρρίκνωση */
 }
 
 /* header */
