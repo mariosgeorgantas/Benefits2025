@@ -77,12 +77,6 @@ body {
   position: absolute;
   z-index: 1;
   right: 105%; /* Τοποθέτηση δεξιά του trigger */
-  
-  
-  left: 50%; /* Τοποθέτηση στο κέντρο */
-  
-  
-  
   top: 200%; /* Κάθετα στο μέσο του trigger */
   transform: translateY(-50%);
   opacity: 0;
