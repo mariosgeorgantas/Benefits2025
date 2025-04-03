@@ -75,6 +75,7 @@ body {
 
   /* Τοποθέτηση πάνω από το στοιχείο */
   position: sticky;
+  bottom:0;
   z-index: 1;
   right: 105%; /* Τοποθέτηση δεξιά του trigger */
   top: 200%; /* Κάθετα στο μέσο του trigger */
@@ -96,6 +97,7 @@ body {
 .explanation-tooltip .explanation-tooltiptext::after {
   content: "";
   position: sticky;
+  bottom:0;
   top: 50%;
   right: 100%; /* Το βέλος θα εμφανίζεται στα αριστερά του tooltip */
   transform: translateY(-50%);
@@ -123,6 +125,7 @@ body {
 /* Το overlay που καλύπτει ολόκληρη την οθόνη */
 .disclaimer-overlay {
   position: sticky;
+  bottom:0;
   top: 0;
   left: 0;
   width: 100%;
