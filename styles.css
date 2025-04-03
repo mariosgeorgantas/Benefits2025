@@ -59,11 +59,11 @@ body {
   visibility: hidden;
   /* Μέγιστο πλάτος του tooltip */
      
-    width: 80vw;
+    width: 50vw;
     max-width: 800px;
     overflow-x: visible;
 
-    
+  
   white-space: none; /* Επιτρέπεται το wrapping σε νέες γραμμές, χωρίς σπάσιμο λέξεων */
   word-break: normal; /* Δεν διασπόνται οι λέξεις */
   overflow-wrap: normal; /* Μη αναγκαστικό σπάσιμο λέξεων */
