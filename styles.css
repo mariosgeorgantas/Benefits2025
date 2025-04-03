@@ -57,12 +57,15 @@ body {
 }
 
 .explanation-tooltip .explanation-tooltiptext {
+  overflow-x: auto;
+  display: block;
+    
   visibility: hidden;
   /* Μέγιστο πλάτος του tooltip */
   width: 400px;
   max-width: 400px;
 
-  white-space: none; /* Επιτρέπεται το wrapping σε νέες γραμμές, χωρίς σπάσιμο λέξεων */
+  white-space: nowrap; /* Επιτρέπεται το wrapping σε νέες γραμμές, χωρίς σπάσιμο λέξεων */
   word-break: normal; /* Δεν διασπόνται οι λέξεις */
   overflow-wrap: normal; /* Μη αναγκαστικό σπάσιμο λέξεων */
   background-color: #333;
