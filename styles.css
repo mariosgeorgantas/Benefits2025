@@ -1,5 +1,12 @@
-<meta name="viewport" content="width=device-width, initial-scale=1">
 html,
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Η Σελίδα Μου</title>
+    <link rel="stylesheet" href="styles.css">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
 
 body {
   overflow-x: auto; /* Επιτρέπει οριζόντια κύλιση αν το περιεχόμενο είναι μεγαλύτερο */
