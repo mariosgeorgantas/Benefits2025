@@ -63,13 +63,13 @@ body {
 .explanation-tooltip .explanation-tooltiptext {
   visibility: hidden;
   /* Μέγιστο πλάτος του tooltip */
-  width: 400px;
-  
+     
+    width: fit-content;
     max-width: 600px;
     overflow-x: auto;
 
     
-  white-space: none; /* Επιτρέπεται το wrapping σε νέες γραμμές, χωρίς σπάσιμο λέξεων */
+  white-space: normal; /* Επιτρέπεται το wrapping σε νέες γραμμές, χωρίς σπάσιμο λέξεων */
   word-break: normal; /* Δεν διασπόνται οι λέξεις */
   overflow-wrap: normal; /* Μη αναγκαστικό σπάσιμο λέξεων */
   background-color: #333;
