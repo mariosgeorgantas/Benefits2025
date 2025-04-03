@@ -109,6 +109,13 @@ body {
   /* border: 1px solid red; */
   gap: 15px;
 }
+
+
+.govgr-arrow-left {
+  width: 20px;  /* Μεγαλύτερο μέγεθος για καλύτερη ορατότητα */
+  height: 20px;
+  fill: black; /* Άλλαξέ το αν χρειάζεται */
+}
 #backQuestion {
   border-radius: 5px;
 }
