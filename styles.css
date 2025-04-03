@@ -95,7 +95,7 @@ body {
 /* Προαιρετικό "βέλος" για το tooltip */
 .explanation-tooltip .explanation-tooltiptext::after {
   content: "";
-  position: absolute;
+  position: sticky;
   top: 50%;
   right: 100%; /* Το βέλος θα εμφανίζεται στα αριστερά του tooltip */
   transform: translateY(-50%);
