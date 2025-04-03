@@ -1,6 +1,7 @@
 html,
 body {
-  overflow-x: hidden;
+  overflow-x: auto;
+  overflow-y: auto;
 }
 
 /* header */
@@ -60,7 +61,8 @@ body {
   /* Μέγιστο πλάτος του tooltip */
   width: 400px;
   max-width: 400px;
-
+  overflow-x: auto;
+  overflow-y: auto;
   white-space: none; /* Επιτρέπεται το wrapping σε νέες γραμμές, χωρίς σπάσιμο λέξεων */
   word-break: normal; /* Δεν διασπόνται οι λέξεις */
   overflow-wrap: normal; /* Μη αναγκαστικό σπάσιμο λέξεων */
