@@ -65,7 +65,7 @@ body {
 
   
   white-space: none; /* Επιτρέπεται το wrapping σε νέες γραμμές, χωρίς σπάσιμο λέξεων */
-  word-break: normal; /* Δεν διασπόνται οι λέξεις */
+  word-break: normal; /* Δεν διασπώνται οι λέξεις */
   overflow-wrap: normal; /* Μη αναγκαστικό σπάσιμο λέξεων */
   background-color: #333;
   color: #fff;
@@ -74,7 +74,7 @@ body {
   border-radius: 5px;
 
   /* Τοποθέτηση πάνω από το στοιχείο */
-  position: absolute;
+  position: sticky;
   z-index: 1;
   right: 105%; /* Τοποθέτηση δεξιά του trigger */
   top: 200%; /* Κάθετα στο μέσο του trigger */
