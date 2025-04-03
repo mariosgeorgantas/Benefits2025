@@ -59,7 +59,7 @@ body {
   visibility: hidden;
   /* Μέγιστο πλάτος του tooltip */
      
-    width: 400px;
+    width: 90%;
     max-width: 800px;
     overflow-x: visible;
 
