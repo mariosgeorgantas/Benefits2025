@@ -75,10 +75,12 @@ body {
 
   /* Τοποθέτηση πάνω από το στοιχείο */
   position: sticky;
-  bottom:0;
+  /*bottom:0;*/
+  bottom: 100%;
+  top: auto;
   z-index: 1;
   right: 105%; /* Τοποθέτηση δεξιά του trigger */
-  top: 100%; /* Κάθετα στο μέσο του trigger */
+  /*top: 100%;*/ /* Κάθετα στο μέσο του trigger */
   transform: translateY((-10px));
   opacity: 0;
   transition: opacity 0.3s;
