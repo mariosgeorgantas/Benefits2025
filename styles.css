@@ -78,7 +78,7 @@ body {
   overflow-wrap: normal; /* Μη αναγκαστικό σπάσιμο λέξεων */
   background-color: #333;
   color: #fff;
-  text-align: center; 
+  text-align: justify; 
   padding: 5px;
   border-radius: 5px;
 
