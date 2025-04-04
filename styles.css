@@ -50,8 +50,12 @@ body {
 /* Στυλ στοιχείου του tooltip */
 .explanation-tooltip {
   position: relative;
-  display: inline-block;
+  display: block;
+
+  
   cursor: help;
+  
+  
   color: green !important;
 }
 
