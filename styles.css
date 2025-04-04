@@ -79,7 +79,7 @@ body {
   z-index: 1;
   right: 105%; /* Τοποθέτηση δεξιά του trigger */
   top: 100%; /* Κάθετα στο μέσο του trigger */
-  transform: translateY((10px));
+  transform: translateY((-10px));
   opacity: 0;
   transition: opacity 0.3s;
 
