@@ -55,7 +55,7 @@ body {
 /* Στυλ στοιχείου του tooltip */
 .explanation-tooltip {
   position: relative;
-  display: block;
+  display: inline-block;
 
   
   cursor: help;
@@ -71,7 +71,7 @@ body {
     width: 50vw;
     max-width: 800px;
     overflow-x: visible;
-
+    min-width: 200px;
   
   white-space: normal; /* Επιτρέπεται το wrapping σε νέες γραμμές, χωρίς σπάσιμο λέξεων */
   word-break: normal; /* Δεν διασπώνται οι λέξεις */
@@ -90,7 +90,7 @@ body {
   z-index: 1;
   right: 105%; /* Τοποθέτηση δεξιά του trigger */
   /*top: 100%;*/ /* Κάθετα στο μέσο του trigger */
-  transform: translateY((-10px));
+  transform: translateY(-10px);
   opacity: 0;
   transition: opacity 0.3s;
 
@@ -100,7 +100,7 @@ body {
 
 /* Εμφάνιση του tooltip όταν ο χρήστης κάνει hover */
 .explanation-tooltip:hover .explanation-tooltiptext {
-  visibility: visible;
+  display: block;
   opacity: 1;
 }
 
