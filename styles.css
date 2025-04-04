@@ -1,11 +1,6 @@
 html,
 body {
-
-  
-  overflow-x: visible;
-
-
-
+  overflow-x: hidden;
 }
 
 /* header */
@@ -56,11 +51,7 @@ body {
 .explanation-tooltip {
   position: relative;
   display: inline-block;
-
-  
   cursor: help;
-  
-  
   color: green !important;
 }
 
@@ -71,26 +62,23 @@ body {
     width: 50vw;
     max-width: 800px;
     overflow-x: visible;
-    min-width: 200px;
+
   
-  white-space: normal; /* Επιτρέπεται το wrapping σε νέες γραμμές, χωρίς σπάσιμο λέξεων */
-  word-break: normal; /* Δεν διασπώνται οι λέξεις */
+  white-space: none; /* Επιτρέπεται το wrapping σε νέες γραμμές, χωρίς σπάσιμο λέξεων */
+  word-break: normal; /* Δεν διασπόνται οι λέξεις */
   overflow-wrap: normal; /* Μη αναγκαστικό σπάσιμο λέξεων */
   background-color: #333;
   color: #fff;
-  text-align: justify; 
-  padding: 7px;
+  text-align: center; 
+  padding: 5px;
   border-radius: 5px;
 
   /* Τοποθέτηση πάνω από το στοιχείο */
-  position: sticky;
-  /*bottom:0;*/
-  bottom: 100%;
-  top: auto;
+  position: absolute;
   z-index: 1;
   right: 105%; /* Τοποθέτηση δεξιά του trigger */
-  /*top: 100%;*/ /* Κάθετα στο μέσο του trigger */
-  transform: translateY(-10px);
+  top: 200%; /* Κάθετα στο μέσο του trigger */
+  transform: translateY(-50%);
   opacity: 0;
   transition: opacity 0.3s;
 
@@ -100,15 +88,14 @@ body {
 
 /* Εμφάνιση του tooltip όταν ο χρήστης κάνει hover */
 .explanation-tooltip:hover .explanation-tooltiptext {
-  display: block;
+  visibility: visible;
   opacity: 1;
 }
 
 /* Προαιρετικό "βέλος" για το tooltip */
 .explanation-tooltip .explanation-tooltiptext::after {
   content: "";
-  position: sticky;
-  bottom:0;
+  position: absolute;
   top: 50%;
   right: 100%; /* Το βέλος θα εμφανίζεται στα αριστερά του tooltip */
   transform: translateY(-50%);
@@ -136,7 +123,6 @@ body {
 /* Το overlay που καλύπτει ολόκληρη την οθόνη */
 .disclaimer-overlay {
   position: sticky;
-  bottom:0;
   top: 0;
   left: 0;
   width: 100%;
