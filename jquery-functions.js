@@ -414,14 +414,6 @@ q7: {
       },
     },
   };
-
-
-
-
-
-
-
-
   /***************************************
    * 2. Συναρτήσεις Εμφάνισης Ερώτησης και Επεξεργασίας
    ***************************************/
@@ -478,27 +470,6 @@ q7: {
 
     $("#question-container").html(html);
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
   // Φόρτωση της ερώτησης με μήνυμα λάθους 
   function loadQuestionWithError() {
     var questionData = decisionTree[currentQuestionKey];
@@ -548,16 +519,6 @@ q7: {
     `;
     $("#question-container").html(html);
 }
-
-
-
-
-
-
-
-
-
-
   function showResult(message) {
     $("#question-container").empty();
 
