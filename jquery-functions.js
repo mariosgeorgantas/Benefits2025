@@ -430,7 +430,7 @@ q7: {
     if (questionData.explanation && questionData.explanation.trim() !== "") {
         tooltipHtml = `
             <span class="explanation-tooltip">
-                (?)
+                (i)
                 <span class="explanation-tooltiptext">${questionData.explanation}</span>
             </span>
         `;
