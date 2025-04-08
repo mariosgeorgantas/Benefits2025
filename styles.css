@@ -109,7 +109,7 @@ body {
   bottom:0;
   top: 50%;
   right: 100%; /* Το βέλος θα εμφανίζεται στα αριστερά του tooltip */
-  transform: translateY(-50%);
+  transform: none;
   border-width: 5px;
   border-style: solid;
   border-color: transparent #333 transparent transparent;
