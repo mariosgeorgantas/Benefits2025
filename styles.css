@@ -62,12 +62,20 @@ body {
      
     width: 50vw;
     max-width: 800px;
-    overflow-x: visible;
+    //overflow-x: visible;
 
   
   white-space: normal; /* Επιτρέπεται το wrapping σε νέες γραμμές, χωρίς σπάσιμο λέξεων */
-  word-break: normal; /* Δεν διασπώνται οι λέξεις */
-  overflow-wrap: normal; /* Μη αναγκαστικό σπάσιμο λέξεων */
+  
+  
+  
+  //word-break: normal; /* Δεν διασπώνται οι λέξεις */
+  
+  
+  
+  //overflow-wrap: normal; /* Μη αναγκαστικό σπάσιμο λέξεων */
+  
+  
   background-color: #333;
   color: #fff;
   text-align: center; 
