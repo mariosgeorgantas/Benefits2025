@@ -67,7 +67,7 @@ body {
     overflow-x: visible;
 
   
-  white-space: normal; /* Επιτρέπεται το wrapping σε νέες γραμμές, χωρίς σπάσιμο λέξεων */
+  white-space: none; /* Επιτρέπεται το wrapping σε νέες γραμμές, χωρίς σπάσιμο λέξεων */
   word-break: normal; /* Δεν διασπώνται οι λέξεις */
   overflow-wrap: normal; /* Μη αναγκαστικό σπάσιμο λέξεων */
   background-color: #333;
@@ -86,19 +86,20 @@ body {
   opacity: 0;
   transition: opacity 0.3s;
   font-family: 'Arial', sans-serif;
-  font-size: 15px;
-  line-height: 1.2;
-  white-space: normal;
+  font-size: 16px;
+  line-height: 1.3;
 }
 
 /* Εμφάνιση του tooltip όταν ο χρήστης κάνει hover */
 .explanation-tooltip:hover .explanation-tooltiptext {
+   all: unset;
   visibility: visible;
   opacity: 1;
 }
 
 /* Προαιρετικό "βέλος" για το tooltip */
 .explanation-tooltip .explanation-tooltiptext::after {
+   font-family: 'Arial', 'Segoe UI', 'Helvetica Neue', sans-serif;
   content: "";
   position: sticky;
   bottom:0;
