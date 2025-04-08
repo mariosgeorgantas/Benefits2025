@@ -49,7 +49,7 @@ body {
 
 /* Στυλ στοιχείου του tooltip */
 .explanation-tooltip {
-  position: relative;
+  position: sticky;
   display: inline-block;
   cursor: help;
   color: green !important;
