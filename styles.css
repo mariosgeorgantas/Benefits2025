@@ -50,6 +50,7 @@ body {
 /* Στυλ στοιχείου του tooltip */
 .explanation-tooltip {
   position: sticky;
+  bottom:0;
   display: inline-block;
   cursor: help;
   color: green !important;
@@ -57,33 +58,37 @@ body {
 
 .explanation-tooltip .explanation-tooltiptext {
   visibility: hidden;
-  position: sticky;
-  top: 100%;        /* Εμφάνιση κάτω από το στοιχείο */
-  right: 0;         /* Ή adjust για να πάει αριστερά ή δεξιά όπως θες */
-  
-  width: 50vw;
-  max-width: 800px;
+  /* Μέγιστο πλάτος του tooltip */
+     
+    width: 50vw;
+    max-width: 800px;
+    overflow-x: visible;
 
-  white-space: normal;
+  
+  white-space: none; /* Επιτρέπεται το wrapping σε νέες γραμμές, χωρίς σπάσιμο λέξεων */
+  word-break: normal; /* Δεν διασπώνται οι λέξεις */
+  overflow-wrap: normal; /* Μη αναγκαστικό σπάσιμο λέξεων */
   background-color: #333;
   color: #fff;
   text-align: center; 
   padding: 5px;
   border-radius: 5px;
 
+  /* Τοποθέτηση πάνω από το στοιχείο */
+  position: sticky;
+  bottom:0;
+  z-index: 1;
+  right: 105%; /* Τοποθέτηση δεξιά του trigger */
+  top: 200%; /* Κάθετα στο μέσο του trigger */
+  transform: translateY(-50%);
   opacity: 0;
   transition: opacity 0.3s;
 
-  /* Anti-aliasing και rendering fixes */
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-rendering: optimizeLegibility;
-  backface-visibility: hidden;
-  will-change: opacity;
-  z-index: 10;
+  font-size: 16px;
+  line-height: 1.3;
 }
 
-/* Εμφάνιση του tooltip όταν γίνεται hover */
+/* Εμφάνιση του tooltip όταν ο χρήστης κάνει hover */
 .explanation-tooltip:hover .explanation-tooltiptext {
   visibility: visible;
   opacity: 1;
@@ -92,12 +97,14 @@ body {
 /* Προαιρετικό "βέλος" για το tooltip */
 .explanation-tooltip .explanation-tooltiptext::after {
   content: "";
-  position: absolute;
-  top: -5px;
-  left: 10px;
+  position: sticky;
+  bottom:0;
+  top: 50%;
+  right: 100%; /* Το βέλος θα εμφανίζεται στα αριστερά του tooltip */
+  transform: translateY(-50%);
   border-width: 5px;
   border-style: solid;
-  border-color: transparent transparent #333 transparent;
+  border-color: transparent #333 transparent transparent;
 }
 .buttons-container {
   display: flex;
