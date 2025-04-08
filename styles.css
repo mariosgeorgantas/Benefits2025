@@ -54,7 +54,7 @@ body {
   bottom:0;
   display: inline-block;
   cursor: help;
-  color: grey !important;}
+  color: blue !important;}
 
 .explanation-tooltip .explanation-tooltiptext {
   
@@ -107,7 +107,7 @@ body {
   transform: translateY(-50%);
   border-width: 5px;
   border-style: solid;
-  border-color: transparent #333 transparent transparent;
+  border-color: transparent;
 }
 .buttons-container {
   display: flex;
