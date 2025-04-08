@@ -65,7 +65,7 @@ body {
     overflow-x: visible;
 
   
-  white-space: none; /* Επιτρέπεται το wrapping σε νέες γραμμές, χωρίς σπάσιμο λέξεων */
+  white-space: normal; /* Επιτρέπεται το wrapping σε νέες γραμμές, χωρίς σπάσιμο λέξεων */
   word-break: normal; /* Δεν διασπώνται οι λέξεις */
   overflow-wrap: normal; /* Μη αναγκαστικό σπάσιμο λέξεων */
   background-color: #333;
@@ -73,7 +73,7 @@ body {
   text-align: center; 
   padding: 5px;
   border-radius: 5px;
-  font-family: 'Times New Roman', sans-serif;
+  
   /* Τοποθέτηση πάνω από το στοιχείο */
   position: sticky;
   bottom:0;
@@ -84,8 +84,9 @@ body {
   opacity: 0;
   transition: opacity 0.3s;
 
-  font-size: 18px;
-  line-height: 1.3;
+  font-size: 15px;
+  line-height: 1.2;
+  white-space: normal;
 }
 
 /* Εμφάνιση του tooltip όταν ο χρήστης κάνει hover */
