@@ -57,7 +57,7 @@ body {
 
 .explanation-tooltip .explanation-tooltiptext {
   visibility: hidden;
-  position: absolute;
+  position: sticky;
   top: 100%;        /* Εμφάνιση κάτω από το στοιχείο */
   right: 0;         /* Ή adjust για να πάει αριστερά ή δεξιά όπως θες */
   
