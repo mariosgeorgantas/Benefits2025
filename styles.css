@@ -49,6 +49,7 @@ body {
 
 /* Στυλ στοιχείου του tooltip */
 .explanation-tooltip {
+  all: unset;
   position: sticky;
   bottom:0;
   display: inline-block;
@@ -57,7 +58,7 @@ body {
 }
 
 .explanation-tooltip .explanation-tooltiptext {
-  all: unset;
+  
   visibility: hidden;
   /* Μέγιστο πλάτος του tooltip */
      
