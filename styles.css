@@ -57,6 +57,7 @@ body {
 }
 
 .explanation-tooltip .explanation-tooltiptext {
+  all: unset;
   visibility: hidden;
   /* Μέγιστο πλάτος του tooltip */
      
