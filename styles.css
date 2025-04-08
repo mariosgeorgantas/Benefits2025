@@ -59,7 +59,9 @@ body {
 .explanation-tooltip .explanation-tooltiptext {
   visibility: hidden;
   /* Μέγιστο πλάτος του tooltip */
-     
+     -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
     width: 50vw;
     max-width: 800px;
     //overflow-x: visible;
