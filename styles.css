@@ -54,8 +54,7 @@ body {
   bottom:0;
   display: inline-block;
   cursor: help;
-  color: green !important;
-}
+  color: grey !important;}
 
 .explanation-tooltip .explanation-tooltiptext {
   
