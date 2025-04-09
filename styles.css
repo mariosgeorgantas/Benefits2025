@@ -54,27 +54,32 @@ body {
   bottom:0;
   display: inline-block;
   cursor: help;
-  color: blue !important;}
+  color: blue !important;
+}
 
 .explanation-tooltip .explanation-tooltiptext {
-  
+  all: unset; /* καθαρίζει όλες τις default επιρροές */
   visibility: hidden;
   /* Μέγιστο πλάτος του tooltip */
      
     width: 50vw;
-    max-width: 800px;
+    max-width: 400px;
     overflow-x: visible;
 
   
-  white-space: none; /* Επιτρέπεται το wrapping σε νέες γραμμές, χωρίς σπάσιμο λέξεων */
+  white-space: normal; /* Επιτρέπεται το wrapping σε νέες γραμμές, χωρίς σπάσιμο λέξεων */
   word-break: normal; /* Δεν διασπώνται οι λέξεις */
   overflow-wrap: normal; /* Μη αναγκαστικό σπάσιμο λέξεων */
   background-color: #333;
   color: #fff;
   text-align: center; 
-  padding: 5px;
-  border-radius: 5px;
+  border-radius: 8px;
   
+  
+  
+  
+  padding: 12px 16px;
+
   /* Τοποθέτηση πάνω από το στοιχείο */
   position: sticky;
   bottom:0;
@@ -84,27 +89,29 @@ body {
   transform: translateY(-50%);
   opacity: 0;
   transition: opacity 0.3s;
-  font-family: 'Arial', sans-serif;
+
   font-size: 16px;
-  line-height: 1.3;
+  line-height: 1.5;
+  
 }
 
 /* Εμφάνιση του tooltip όταν ο χρήστης κάνει hover */
 .explanation-tooltip:hover .explanation-tooltiptext {
-   all: unset;
+  all: unset;
   visibility: visible;
   opacity: 1;
 }
 
 /* Προαιρετικό "βέλος" για το tooltip */
 .explanation-tooltip .explanation-tooltiptext::after {
-   font-family: 'Arial', 'Segoe UI', 'Helvetica Neue', sans-serif;
+  font-family: 'Arial', 'Segoe UI', 'Helvetica Neue', sans-serif;
   content: "";
   position: sticky;
-  bottom:0;
+  bottom:120%;
+  left: 5%;
   top: 50%;
   right: 100%; /* Το βέλος θα εμφανίζεται στα αριστερά του tooltip */
-  transform: translateY(-50%);
+  
   border-width: 5px;
   border-style: solid;
   border-color: transparent;
