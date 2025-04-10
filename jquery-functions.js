@@ -56,7 +56,7 @@ $(document).ready(function () {
           oxieee++;
          return "q0_5";
           },
-        "Σε καμία από τις παραπάνω": function() {
+        "Δεν ανήκει σε καμία από τις παραπάνω κατηγορίες": function() {
           return "q0_5";
           },
         },
