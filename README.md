@@ -27,7 +27,7 @@ js/jquery-functions.js # Custom jQuery functions to fetch questions and to handl
 README.md # Project documentation
 Screenshots # photos of the usage of questionnaire
 
-You can visit the web-based dialogue system [here](https://govgr................)
+You can visit the web-based dialogue system [here](https://mariosgeorgantas.github.io/Benefits2025/))
 
 
 \*\* [Live Server Extension](https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer): Go to the Extensions view by clicking on the Extensions icon in the Sidebar or pressing Ctrl+Shift+X. Search for "Live Server" and install the extension by Ritwick Dey (OR search with id = ritwickdey.LiveServer). 
